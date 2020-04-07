@@ -1,16 +1,20 @@
-import Header from '../components/Header';
+import Header from './Header'
+import Navigation from './Navigation'
 
 const layoutStyle = {
-    margin: 20,
-    padding: 20,
-    border: '1px solid #DDD'
-};
+  margin: 20,
+  padding: 20,
+}
 
-const Layout = props => (
+export default function Layout(props) {
+  return (
     <div style={layoutStyle}>
-        <Header />
-        {props.content}
+      <Header />
+      <Navigation/>
+      {props.children}
+      <style jsx>{`
+        text-align: center;
+      `}</style>
     </div>
-);
-
-export default Layout;
+  )
+};

@@ -1,18 +1,29 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
 const linkStyle = {
-    marginRight: 15
-};
+  marginRight: 15
+}
 
-const Header = () => (
+export default function Header() {
+  return (
     <div>
-        <Link href="/">
-            <a style={linkStyle}>Home</a>
-        </Link>
-        <Link href="/about">
-            <a style={linkStyle}>About</a>
-        </Link>
-    </div>
-);
+      <Link href="/">
+        <a style={linkStyle}>Home</a>
+      </Link>
+      <Link href="/about">
+        <a style={linkStyle}>About</a>
+      </Link>
+      <style jsx>{`
+        a {
+          font-family: 'Arial';
+          text-decoration: none;
+          color: blue;
+        }
 
-export default Header;
+        a:hover {
+          opacity: 0.6;
+        }
+      `}</style>
+    </div>
+  )
+}
