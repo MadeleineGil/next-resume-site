@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 
-const NavButton = styled.button`
+const Button = styled.button`
     display: inline-block;
     color: #703A4B;
     font-size: 1em;
@@ -11,6 +11,10 @@ const NavButton = styled.button`
     border-radius: 3px;
     display: block;
 `;
+
+const NavButton = props => <Button>
+    
+</Button>
 
 export default function Navigation(props) {
     return (
