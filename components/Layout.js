@@ -9,10 +9,12 @@ const layoutStyle = {
 export default function Layout(props) {
   return (
     <div style={layoutStyle}>
-      <Header />
       <Navigation/>
       {props.children}
       <style jsx>{`
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
         text-align: center;
       `}</style>
     </div>
