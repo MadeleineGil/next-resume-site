@@ -1,15 +1,10 @@
 import Layout from '../components/Layout';
 
+// TOOD: get the content from remote
 export default function Index() {
     return <Layout>
-        <h1>Name Here</h1>
-        <p>Get info about me here</p>
-        <p>LinkedIn etc logos should go here</p>
-        <style jsx>{`
-        h1,
-        a {
-          font-family: 'Arial';
-        }
-      `}</style>
+        <h1>Madeleine Gillard</h1>
+        <h3>Software Developer &amp; Aerial Arts Student</h3>
+        <p>Info about me here</p>
     </Layout>;
 }

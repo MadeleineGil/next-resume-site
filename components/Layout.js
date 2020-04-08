@@ -1,5 +1,6 @@
 import Header from './Header'
 import Navigation from './Navigation'
+import Footer from './Footer'
 
 const layoutStyle = {
   margin: 20,
@@ -16,7 +17,9 @@ export default function Layout(props) {
         justify-content: center;
         flex-direction:column;
         text-align: center;
+        font-family: 'Arial';
       `}</style>
+      <Footer />
     </div>
   )
 };
