@@ -18,6 +18,7 @@ export default function Layout(props) {
         flex-direction:column;
         text-align: center;
         font-family: 'Arial';
+      }
       `}</style>
       <Footer />
     </div>

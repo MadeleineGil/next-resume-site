@@ -16,6 +16,14 @@ const Button = styled.button`
       color: #703A4B;
       text-decoration: none;
     }
+    &:hover {
+      background-color: #C5AEB5;
+      color: #3A1E26;
+      border: 2px solid #3A1E26;
+    }
+    &:hover a {
+      color: #3A1E26;
+    }
 `;
 
 export default function Navigation(props) {
@@ -29,11 +37,8 @@ export default function Navigation(props) {
         <Button><Link href='/'>
           <a>Home</a>
         </Link></Button>
-        <Button><Link href='/about'>
-          <a>About</a>
-        </Link></Button>
-        <Button><Link href='/work-history'>
-          <a>Work History</a>
+        <Button><Link href='/work-skills'>
+          <a>Work + Skills</a>
         </Link></Button>
         <Button><Link href='/projects'>
           <a>Projects</a>
