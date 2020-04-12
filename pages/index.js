@@ -9,8 +9,6 @@ export default function Index() {
         h1, h3 {
           padding: 0.5em;
         }
-        align-text: center;
-        align-content:
       `}</style>
       <h1>Hi there!</h1>
       <p><HandSpock size="50"/></p>

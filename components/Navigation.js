@@ -37,8 +37,11 @@ export default function Navigation(props) {
         <Button><Link href='/'>
           <a>Home</a>
         </Link></Button>
-        <Button><Link href='/work-skills'>
-          <a>Work + Skills</a>
+        <Button><Link href='/work'>
+          <a>Work</a>
+        </Link></Button>
+        <Button><Link href='/skills'>
+          <a>Skills</a>
         </Link></Button>
         <Button><Link href='/projects'>
           <a>Projects</a>
