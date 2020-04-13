@@ -1,23 +1,23 @@
-{
-    "jobs": [
-        {
-            "logo": "Bank",
-            "company": "NAB",
-            "role": "software developer",
-            "date": "September 2018 - Present",
-            "description": "n/a"
-        },
-        {
-            "company": "Kmart",
-            "role": "Team Leader",
-            "date": "October 2011 - September 2018",
-            "description": "n/a"
-        },
-        {
-            "company": "UTS",
-            "role": "SPROUT Student Assistant, Work Experience Workshops",
-            "date": "December 2017",
-            "description": "n/a"
-        }
-    ]
-}
+[
+    {
+        "logo": "Bank",
+        "company": "NAB",
+        "role": "software developer",
+        "date": "September 2018 - Present",
+        "description": "n/a"
+    },
+    {
+        "logo": "Retail",
+        "company": "Kmart",
+        "role": "Team Leader",
+        "date": "October 2011 - September 2018",
+        "description": "n/a"
+    },
+    {
+        "logo": "School",
+        "company": "UTS",
+        "role": "SPROUT Student Assistant, Work Experience Workshops",
+        "date": "December 2017",
+        "description": "n/a"
+    }
+]
