@@ -17,20 +17,24 @@ export default function Layout(props) {
 
   return (
     <div>
+        <style jsx>{`
+          &{
+            display: flex;
+            justify-content: center;
+            flex-direction:row;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            font-family: 'Arial';
+            padding: 0.5em;
+          }
+        `}</style>
       <a href="https://www.linkedin.com/in/madeleinegillard">
         <LinkedinSquare  size="50" color="#703A4B"/>
       </a>
       <a href="https://github.com/MadeleineGil">
         <Github  size="50" color="#703A4B"/>
       </a>
-      <style jsx>{`
-        display: flex;
-        justify-content: center;
-        flex-direction:row;
-        text-align: center;
-        font-family: 'Arial';
-        padding: 0.5em;
-      `}</style>
     </div>
   )
 };

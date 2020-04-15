@@ -53,11 +53,11 @@ function JobLogo({logo}){
             )
         case 'default':
             return(
-                <p>default</p>
+                <p>No Logo Provided</p>
             )
         default:
             return(
-                <p>nothing</p>
+                <p>No Logo Provided</p>
             )
 
     }
@@ -84,16 +84,23 @@ function Work({jobs}) {
                 h3 {
                     font-family: Arial;
                 }
+                .job {
+                    padding: 1em;
+                }
+                .job p {
+                    // put text styles here
+                }
             `}</style>
             <h3>Work History</h3>
             <div id="content">
                 {
                     jobs.map(job => (
-                        <div>
+                        <div className="job">
                             <JobLogo logo={job.logo}></JobLogo>
                             <p>{job.company}</p>
                             <p>{job.role}</p>
                             <p>{job.date}</p>
+                            <p>{job.description}</p>
                         </div>
                     ))
                 }
