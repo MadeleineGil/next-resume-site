@@ -25,21 +25,9 @@ export default function Index() {
           font-family: 'Arial';
           align-content: center;
           align-items: center;
-          // align-self: stretch;
-        }
-        img {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          align-content: center;
-          height: 80%;
-          width: 80%;
         }
       `}</style>
       <div id="container">
-        <div id="image">
-          <img src="/group-clg.jpg" alt="mad-img" />
-        </div>
         <div id="content">
           <h1>Hi there!</h1>
           <p><HandSpock size="50"/></p>
