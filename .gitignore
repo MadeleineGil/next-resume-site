@@ -1,4 +1,3 @@
 .next
 node_modules
-public/group-clg.jpg
-public/holiday.jpg
+*.jpg

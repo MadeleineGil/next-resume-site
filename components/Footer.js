@@ -18,7 +18,7 @@ export default function Layout(props) {
   return (
     <div>
         <style jsx>{`
-          &{
+          & {
             display: flex;
             justify-content: center;
             flex-direction:row;
@@ -27,6 +27,7 @@ export default function Layout(props) {
             align-content: center;
             font-family: 'Arial';
             padding: 0.5em;
+            // align-self: flex-end;
           }
         `}</style>
       <a href="https://www.linkedin.com/in/madeleinegillard">

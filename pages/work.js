@@ -78,8 +78,10 @@ function Work({jobs}) {
                 }
                 #content {
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
                     justify-content: center;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
                 }
                 h3 {
                     font-family: Arial;
@@ -88,7 +90,7 @@ function Work({jobs}) {
                     padding: 1em;
                 }
                 .job p {
-                    // put text styles here
+                    font-family: Arial;
                 }
             `}</style>
             <h3>Work History</h3>
