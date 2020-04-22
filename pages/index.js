@@ -16,7 +16,6 @@ export default function Index() {
           justify-content: space-around;
           align-items: center;
           align-content: center;
-          backdrop-filter: blur(0.8);
         }
         #content {
           display: flex;
@@ -26,6 +25,7 @@ export default function Index() {
           font-family: 'Arial';
           align-content: center;
           align-items: center;
+          backdrop-filter: blur(2px);
         }
       `}</style>
       <div id="container">

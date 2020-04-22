@@ -1,16 +1,16 @@
-{
-    "volunteering-roles": [
+[
         {
+            "logo": "Tech",
             "organisation": "Code Like A Girl",
             "role": "Event Volunteer & Assistant Facilitator",
             "date": "November 2017 - Present",
             "description": "n/a"
         },
         {
+            "logo": "School",
             "organisation": "UTS Women in Engineering and IT",
             "role": "Hands on Day Volunteer",
             "date": "December 2016",
             "description": "n/a"
         }
-    ]
-}
+]

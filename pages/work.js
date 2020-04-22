@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 import styled from 'styled-components'
 import React, { Component } from 'react'
 import { Bank } from '@styled-icons/remix-line/Bank'
-import { ShoppingBag } from '@styled-icons/boxicons-regular/ShoppingBag'
+import { ShoppingBag, CodeCurly } from '@styled-icons/boxicons-regular'
 import { School } from '@styled-icons/material-outlined/School'
 
 const Button = styled.button`
@@ -28,16 +28,17 @@ const Button = styled.button`
 export async function getStaticProps() {
 
     const jobs = require('../content/work-history.json');
-    // jobs = jobs.json()
+    const volunteers = require('../content/volunteering.json');
 
     return {
         props: {
             jobs,
+            volunteers,
         },
     }
 }
 
-function JobLogo({logo}){
+function Logo({logo}){
     switch(logo) {
         case "Bank":
             return(
@@ -50,6 +51,10 @@ function JobLogo({logo}){
         case 'School':
             return(
                 <School size="50" color="grey" />
+            )
+        case 'Tech':
+            return(
+                <CodeCurly size="50" color="grey" />
             )
         case 'default':
             return(
@@ -64,7 +69,7 @@ function JobLogo({logo}){
 }
 
 // TODO: find a nice way to present this
-function Work({jobs}) {
+function Work({jobs, volunteers}) {
 
     return (
     <Layout>
@@ -76,7 +81,7 @@ function Work({jobs}) {
                     justify-content: center;
                     padding: 2em;
                 }
-                #content {
+                .content {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -86,19 +91,20 @@ function Work({jobs}) {
                 h3 {
                     font-family: Arial;
                 }
-                .job {
+                .item {
                     padding: 1em;
+                    backdrop-filter: blur(2px);
                 }
-                .job p {
+                .item p {
                     font-family: Arial;
                 }
             `}</style>
-            <h3>Work History</h3>
-            <div id="content">
+            <h3>Employment History</h3>
+            <div className="content">
                 {
                     jobs.map(job => (
-                        <div className="job">
-                            <JobLogo logo={job.logo}></JobLogo>
+                        <div className="item">
+                            <Logo logo={job.logo}></Logo>
                             <p>{job.company}</p>
                             <p>{job.role}</p>
                             <p>{job.date}</p>
@@ -106,6 +112,35 @@ function Work({jobs}) {
                         </div>
                     ))
                 }
+            </div>
+            <h3>Volunteering</h3>
+            <div className="content">
+                {
+                    volunteers.map(volunteer => (
+                        <div className="item">
+                            <Logo logo={volunteer.logo}></Logo>
+                            <p>{volunteer.organisation}</p>
+                            <p>{volunteer.role}</p>
+                            <p>{volunteer.date}</p>
+                            <p>{volunteer.description}</p>
+                        </div>
+                    ))
+                }
+            </div>
+            <h3>Projects</h3>
+            <div className="content">
+                <p>Add Projects worked on and links to pdfs or github etc </p>
+                {/* {
+                    volunteers.map(volunteer => (
+                        <div className="item">
+                            <Logo logo={volunteer.logo}></Logo>
+                            <p>{volunteer.organisation}</p>
+                            <p>{volunteer.role}</p>
+                            <p>{volunteer.date}</p>
+                            <p>{volunteer.description}</p>
+                        </div>
+                    ))
+                } */}
             </div>
         </div>
     </Layout>
