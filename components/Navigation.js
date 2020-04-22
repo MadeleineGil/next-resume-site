@@ -11,6 +11,7 @@ const Button = styled.button`
       border: 2px solid #703A4B;
       border-radius: 3px;
       display: block;
+      font-family: 'Lucida Console';
     }
     a {
       color: #703A4B;
@@ -30,21 +31,26 @@ export default function Navigation(props) {
     return (
       <div>
         <style jsx>{`
+        .{
+          align-self: flex-start;
+        }
+        &{
           display: flex;
           flex-direction: row;
           justify-content: center;
+        }
         `}</style>
           <Button><Link href='/'>
             <a>Home</a>
           </Link></Button>
+          <Button><Link href='/about'>
+            <a>About</a>
+          </Link></Button>
           <Button><Link href='/work'>
             <a>Work</a>
           </Link></Button>
-          <Button><Link href='/skills'>
-            <a>Skills</a>
-          </Link></Button>
-          <Button><Link href='/projects'>
-            <a>Projects</a>
+          <Button><Link href='/contact'>
+            <a>Contact</a>
           </Link></Button>
       </div>
     )

@@ -18,6 +18,9 @@ export default function Layout(props) {
   return (
     <div>
         <style jsx>{`
+          . {
+            align-self: flex-end;
+          }
           & {
             display: flex;
             justify-content: center;
@@ -27,6 +30,7 @@ export default function Layout(props) {
             align-content: center;
             font-family: 'Arial';
             padding: 0.5em;
+            // flex-grow: 1;
             // align-self: flex-end;
           }
         `}</style>

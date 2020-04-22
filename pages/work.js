@@ -89,14 +89,14 @@ function Work({jobs, volunteers}) {
                     justify-content: space-evenly;
                 }
                 h3 {
-                    font-family: Arial;
+                    // font-family: Arial;
                 }
                 .item {
                     padding: 1em;
                     backdrop-filter: blur(2px);
                 }
                 .item p {
-                    font-family: Arial;
+                    // font-family: Arial;
                 }
             `}</style>
             <h3>Employment History</h3>
