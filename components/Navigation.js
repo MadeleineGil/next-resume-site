@@ -38,6 +38,11 @@ export default function Navigation(props) {
           display: flex;
           flex-direction: row;
           justify-content: center;
+          flex-shrink: 1;
+          flex: 1;
+          flex-basis: content;
+          // align-self: flex-start;
+
         }
         `}</style>
           <Button><Link href='/'>

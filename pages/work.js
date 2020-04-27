@@ -93,6 +93,7 @@ function Work({jobs, volunteers}) {
                 }
                 .item {
                     padding: 1em;
+                    flex: 1;
                     backdrop-filter: blur(2px);
                 }
                 .item p {

@@ -23,6 +23,7 @@ export default function Layout(props) {
           }
           & {
             display: flex;
+            align-self: center;
             justify-content: center;
             flex-direction:row;
             text-align: center;
@@ -30,8 +31,9 @@ export default function Layout(props) {
             align-content: center;
             font-family: 'Arial';
             padding: 0.5em;
-            // flex-grow: 1;
-            // align-self: flex-end;
+            flex-shrink: 1;
+            flex: 1;
+            flex-basis: content;
           }
         `}</style>
       <a href="https://www.linkedin.com/in/madeleinegillard">

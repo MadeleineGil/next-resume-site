@@ -7,21 +7,25 @@ export default function Index() {
     return (
     <Layout>
       <style jsx>{`
+        & {
+          flex: 2;
+          align-self: center;
+          flex-grow: 2;
+        }
         h1 {
           padding: 0.5em;
         }
         #container {
           display: flex;
           flex-direction: row;
-          // justify-content: space-around;
-          // justify-content: center;
           align-self: center;
+          flex: 1;
+          // align-self: stretch
         }
         #content {
           display: flex;
           justify-content: center;
           flex-direction:column;
-          text-align: center;
           align-items: center;
           backdrop-filter: blur(2px);
         }
